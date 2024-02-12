@@ -12,8 +12,7 @@ This Plasmoid is installed just like the rest
 ```
 cd existing_repo
 git remote add origin https://www.opencode.net/feveal/com.plasma.baro.git
-git branch -M main
-git push -uf origin main
+
 ```
 
 ## Integrate with your tools
