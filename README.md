@@ -1,4 +1,4 @@
-com.plasma.baro
+##com.plasma.baro
 
 This Plasmoid provides weather forecast on the image of an old barometer. The needle shows the temperature. The image also appears with the
 current prediction, temperature and other details. 
