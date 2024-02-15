@@ -146,7 +146,7 @@ Item {
                     // Timer para cambiar las imágenes con cierto intervalo
                 Timer {
                     id: animationTimer
-                    interval: (1000 / (weatherData.intWindSpeed() / 2) + 1)
+                    interval: (700 / (weatherData.intWindSpeed() / 2) + 1)
                     repeat: true
                     running: true
                     property int currentImageIndex: 1;
