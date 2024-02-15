@@ -15,7 +15,7 @@
 		"ServiceTypes": ["Plasma/Applet"],
 		"X-KDE-PluginInfo-License": "GPLv3",
 		"Version": "1.0",
-		"Website": ""
+		"Website": "https://github.com/feveal/com.plasma.baro"
 	},
 	"X-Plasma-API": "declarativeappletscript",
 	"X-Plasma-MainScript": "ui/Main.qml",
