@@ -6,8 +6,8 @@ This Plasmoid provides weather forecast on the image of an old barometer. The ne
 ![](https://github.com/feveal/com.plasma.baro/blob/main/Screenshot_baro.png)
 
 ## Getting started:
-The Plasmoid is installed just like the rest. ".local/share/plasma/plasmoids/com.plasma.baro/"
-Integrate with your tools. IMPORTANT, The ZIP adds "-main" it needs to be removed
+The Plasmoid is installed just like the rest. ".local/share/plasma/plasmoids/com.baro-plasma/"
+Integrate with your tools. 
 
 
 ## Description:
