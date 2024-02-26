@@ -1,6 +1,6 @@
 // Version 1
 
-import QtQuick 2.3
+import QtQuick 2.0
 
 QtObject {
 	id: displayUnits
@@ -46,6 +46,27 @@ QtObject {
 			return plasmoid.configuration.temperatureUnitId
 		}
 	}
+	readonly property int windSpeedUnitId: {
+		if (plasmoid.configuration.windSpeedUnitId === 0) { // Use locale default
+			return locale_windSpeedUnitId
+		} else {
+			return plasmoid.configuration.windSpeedUnitId
+		}
+	}
+	readonly property int pressureUnitId: {
+		if (plasmoid.configuration.pressureUnitId === 0) { // Use locale default
+			return locale_pressureUnitId
+		} else {
+			return plasmoid.configuration.pressureUnitId
+		}
+	}
+	readonly property int visibilityUnitId: {
+		if (plasmoid.configuration.visibilityUnitId === 0) { // Use locale default
+			return locale_visibilityUnitId
+		} else {
+			return plasmoid.configuration.visibilityUnitId
+		}
+	}
 
 	//---
 	function setDisplayUnit(key, nextValue) {
@@ -70,5 +91,13 @@ QtObject {
 	function setTemperatureUnitId(nextValue) {
 		setDisplayUnit('temperature', nextValue)
 	}
-
+	function setWindSpeedUnitId(nextValue) {
+		setDisplayUnit('windSpeed', nextValue)
+	}
+	function setPressureUnitId(nextValue) {
+		setDisplayUnit('pressure', nextValue)
+	}
+	function setVisibilityUnitId(nextValue) {
+		setDisplayUnit('visibility', nextValue)
+	}
 }

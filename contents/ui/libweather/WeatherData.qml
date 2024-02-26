@@ -69,8 +69,8 @@ QtObject {
 				connectionTimeoutTimer.stop()
 				connectingToSource = false
 				plasmoid.busy = false
-//---->> Mediante el siguiente comando se visualizan en consola todos los datos proporcionados por el sevidor
-//				logCurrentData()
+//---->> Visualizar en consola todos los datos proporcionados por el sevidor
+//				 logCurrentData()
 			}
 		}
 
@@ -82,9 +82,7 @@ QtObject {
 				console.log('currentData["' + key + '"]', value)
 			}
 		}
-
 	}
-
 
 	property var connectionTimeoutTimer: Timer {
 		id: connectionTimeoutTimer
@@ -117,6 +115,18 @@ QtObject {
 		// console.log('parseForecast(' + dayIndex + ')', tokens)
 		return tokens
 	}
+
+//-----------------
+
+function weatherTomorrow() {
+    var key = "Short Forecast Day " + 1;
+    var value = data[key];
+    // Suponiendo que value tiene el formato "weather.showers-scattered|chaparrones suaves"
+    var values = value.split("|"); // Separar los dos valores por el carácter "|"
+//	console.log (">>>: " + values)
+    return values; // Devolver un array con la imagen y la descripción
+}
+//------------------
 
 	function parseForecastLabel(tokens) {
 		var condition = tokens[2]
@@ -185,7 +195,7 @@ QtObject {
 			return WeatherPlugin.Util.temperatureToDisplayString(displayUnitType, value, valueUnitType, rounded, degreesOnly)
 		} else {
 			// <= Plasma 5.12
-			return Math.round(value) // + '°'
+			return Math.round(value) + '°'
 		}
 	}
 
@@ -238,7 +248,6 @@ QtObject {
 		}
 		return model
 	}
-
 	property var dailyForecastModel: data ? parseDailyForecastModel() : []
 	// onDailyForecastModelChanged: console.log('dailyForecastModel', JSON.stringify(dailyForecastModel, null, '  '))
 
@@ -291,7 +300,6 @@ QtObject {
 	function formatTempShort(value) {
 		return formatTemp(value, true, true)
 	}
-
 	// Función para valor entero en cálculo de grados
 	function intValueTemp(value) {
 		var value = data["Temperature"] || invalidUnit
@@ -303,7 +311,7 @@ QtObject {
 		var value = data["Wind Speed"]
 		return value
 	}
-
+//--------------------------------------------------------
 	function getDetailsItemAndUnits(valueKey, reportUnitKey) {
 		var reportUnit = data[reportUnitKey] || invalidUnit
 		var displayUnit
@@ -344,7 +352,6 @@ QtObject {
 
 		var windDirection = data["Wind Direction"] || ""
 		var windSpeed = getNumberOrString("Wind Speed")
-
 		var windSpeedText
 		if (windSpeed !== null && windSpeed !== "") {
 			var windSpeedNumeric = (typeof windSpeed !== 'number') ? parseFloat(windSpeed) : windSpeed
@@ -363,7 +370,7 @@ QtObject {
 			}
 			model.push({
 				"label": i18n("Wind:"),
-				"text": windSpeed,
+				"text": windSpeedText,
 			})
 		}
 
@@ -397,5 +404,5 @@ QtObject {
 		// console.log('model', JSON.stringify(model, null, '\t'))
 		return model
 	}
-
 }
+
