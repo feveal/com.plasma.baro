@@ -26,7 +26,6 @@ GridLayout {
                 }
             }
 
-
                 Label {
                     text: i18n("Forecast:")
                 }
@@ -42,6 +41,24 @@ GridLayout {
             LibConfig.SpinBox {
                 Layout.columnSpan: 1
                 configKey: "tempFontSize"
+                suffix: i18nc("font size suffix", "pt")
+            }
+
+                Label {
+                    text: i18n("Date:")
+                }
+            LibConfig.SpinBox {
+                Layout.columnSpan: 1
+                configKey: "dateFontSize"
+                suffix: i18nc("font size suffix", "pt")
+            }
+
+                Label {
+                    text: i18n("Min/Max Temp:")
+                }
+            LibConfig.SpinBox {
+                Layout.columnSpan: 1
+                configKey: "minMaxFontSize"
                 suffix: i18nc("font size suffix", "pt")
             }
 
