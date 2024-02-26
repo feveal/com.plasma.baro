@@ -1,9 +1,11 @@
 import QtQuick 2.3
 
-import "../libweather" as LibWeather
+import QtQuick.Controls 2.2 as QtControls
+import "/libweather" as LibWeather
 import org.kde.plasma.core 2.0 as PlasmaCore
 import org.kde.plasma.private.weather 1.0 as WeatherPlugin
 import "/libweather/WeatherData.qml" as WeatherData
+import "../libweather"
 
 Item {
     id: baro
@@ -97,69 +99,7 @@ Item {
             mipmap: true
             source: "baro.png"
 
-//----------- Mouse
-            MouseArea {
-                id: mouseAction
-                anchors.fill: parent
-                cursorShape: Qt.PointingHandCursor
 
-                onClicked: {
-//                    animationImage.visible = true; // Mostrar la imagen al hacer clic
-//                    animationTimer.running = !animationTimer.running;
-                }
-//                onPressed: {
-//                    console.log ("--")
-//                }
-
-//                onReleased: {
-//                    console.log ("---")
-//                }
-
-//                onPositionChanged: {
-//                    console.log ("----")
-//                }
-
-                onEntered: {
-//                    cursorShape = Qt.PointingHandCursor;
-
-                    animationTimer.running = !animationTimer.running;
-//                    if (!animationTimer.running) {
-//                    animationTimer.start();
-                }
-
-                // Al pasar el ratón por encima
-//                    animationTimer.running = !animationTimer.running;
-
-                onExited: {
-                    cursorShape = Qt.ArrowCursor;
-                // Al salir el ratón del plasmoide
- //                   console.log("El ratón ha salido del plasmoide.")
-                }
-
-                Image {
-                    id: animationImage
-                    x: 170 * parentContainer.scaleFactor
-                    y: 264 * parentContainer.scaleFactor
-                    source: "anemometro/ane-1.png"
-                    visible: true
-                }
-                    // Timer para cambiar las imágenes con cierto intervalo
-                Timer {
-                    id: animationTimer
-                    interval: (700 / (weatherData.intWindSpeed() / 2) + 1)
-                    repeat: true
-                    running: true
-                    property int currentImageIndex: 1;
-                    onTriggered: {
-                        // Lógica para cambiar la imagen
-                        currentImageIndex = (currentImageIndex % 8) + 1;
-                        animationImage.source = "anemometro/ane-" + currentImageIndex + ".png";
-//                        console.log (interval)
-                    }
-                }
-            }
-
-//-----------
 
         }
 
@@ -255,7 +195,7 @@ Item {
 // el angulo es a partir de -15.5 sumandole 0,55 por cada grado entre -20º y 40º
 // En Farenheight es -14.5 y el paso 0.304
 //---------------
-
+// Component.onCompleted: {console.log (">>>: " + angNeedle)}
 
                     origin.x: needle.paintedWidth - (needle.paintedWidth / 6) // Punto de giro en la aguja
                     origin.y: needle.paintedHeight - 2
@@ -265,7 +205,73 @@ Item {
                         }
         }
 
-    }
+//----------- Mouse
+
+                Image {
+                    id: animationImage
+                    x: 170 * parentContainer.scaleFactor
+                    y: 264 * parentContainer.scaleFactor
+                    width: 100 * parentContainer.scaleFactor
+                    height: 37 * parentContainer.scaleFactor
+
+                    source: "anemometro/ane-1.png"
+                    visible: true
+                    MouseArea {
+                        id: mouseAction
+                        anchors.fill: parent
+                        cursorShape: Qt.PointingHandCursor
+
+                        onClicked: {
+                            animationImage.visible = true;
+                            animationTimer.running = !animationTimer.running;
+                        }
+/*
+                        onPressed: {
+                            console.log ("--")
+                        }
+                        onReleased: {
+                            console.log ("---")
+                        }
+                        onPositionChanged: {
+                            console.log ("----")
+                        }
+
+                        onEntered: {
+                            cursorShape = Qt.PointingHandCursor;
+                            animationTimer.running = !animationTimer.running;
+                            if (!animationTimer.running) {
+                            animationTimer.start();
+                            }
+                        }
+
+                        // Al pasar el ratón por encima
+                            animationTimer.running = !animationTimer.running;
+
+                        onExited: {
+                            cursorShape = Qt.ArrowCursor;
+                        // Al salir el ratón del plasmoide
+                           console.log("El ratón ha salido del plasmoide.")
+                        }
+*/
+                    }
+                        // Timer para cambiar las imágenes
+                        Timer {
+                            id: animationTimer
+                            interval: (300 / (weatherData.intWindSpeed() / 2) + 1)
+                            repeat: true
+                            running: true
+                            property int currentImageIndex: 1;
+                            onTriggered: {
+                                currentImageIndex = (currentImageIndex % 8) + 1;
+                                animationImage.source = "anemometro/ane-" + currentImageIndex + ".png";
+//                                console.log (interval)
+                            }
+                        }
+                }
+//-----------
+
+        }
 
     }
+
 }
