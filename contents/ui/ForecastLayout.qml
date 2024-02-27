@@ -2,7 +2,7 @@ import QtQuick 2.7
 import QtQuick.Layouts 1.1
 import org.kde.plasma.core 2.0 as PlasmaCore
 
-Image {
+Item {
 	id: forecastLayout
 
 	opacity: weatherData.hasData ? 1 : 0
@@ -20,5 +20,6 @@ Image {
 		CurrentWeatherView {
 			id: currentWeatherView
 		}
+
 	}
 }
