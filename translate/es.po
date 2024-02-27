@@ -4,9 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
-"Project-Id-Version: baro_feveal\n"
-"Report-Msgid-Bugs-To: -"
-"prueba\n"
+"Project-Id-Version: com.baro-plasma\n"
+"Report-Msgid-Bugs-To: feveal@hotmail.com"
 "POT-Creation-Date: 2024-01-21 13:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -22,69 +21,101 @@ msgstr ""
 msgid "Weather Baro"
 msgstr ""
 
-#: ../contents/ui/WeaterData.qml
+#: ../contents/ui/libweather/WeaterData.qml
 msgid "Wind:"
 msgstr "Viento:"
 
-#: ../contents/ui/WeaterData.qml
-msgid "Visibility:"
-msgstr "Visibilidad:"
+#: ../contents/ui/libweather/WeaterData.qml
+msgid "Windchill:"
+msgstr "Escalofrios:"
 
-#: ../contents/ui/WeaterData.qml
-msgid "Pressure:"
-msgstr "Presión"
+#: ../contents/ui/libweather/WeaterData.qml
+msgid "Short for tonight"
+msgstr "Corto para esta noche"
 
-#: ../contents/ui/WeaterData.qml
-msgid "Humidity:"
-msgstr "Humedad:"
+#: ../contents/ui/libweather/WeaterData.qml
+msgid "nite"
+msgstr "noche"
 
-#: ../metadata.desktop
-msgid "Weather Temperature in Old Barometer"
-msgstr "Temperatura en Barometro antiguo"
+#: ../contents/ui/libweather/WeaterData.qml
+msgid "certain weather condition"
+msgstr "condiciones climaticas"
 
-#: ../contents/ui/config/ConfigAppearance.qml
+#: ../contents/ui/config/ConfigGeneral.qml
 msgid "Update every:"
 msgstr "Actualizar cada:"
 
 #: ../contents/ui/config/ConfigGeneral.qml
-msgid "Show weather warnings"
-msgstr "Ver Alertas Meteorológicas"
+msgid "Show weather details"
+msgstr "Ver detalles"
 
 #: ../contents/ui/config/ConfigGeneral.qml
-msgid "Degrees Units:"
-msgstr "Ver Alertas Meteorológicas"
+msgid "Show weather warnings"
+msgstr "Ver Alertas Meteorológicas:"
+
+#: ../contents/ui/config/ConfigGeneral.qml
+msgid "Desktop Widget: Show background"
+msgstr "Mostrar fondo de Widget"
 
 #: ../contents/ui/config/ConfigGeneral.qml
 msgid "Note: 'wetter.com' server does not provide the current temperature, for this use other servers such as BBC"
 msgstr "Nota: El servidor 'wetter.com' no proporciona la temperatura actual. Utilice otro servidor como BBC"
 
-#: ../contents/ui/config/config.qml
+#: ../contents/config/config.qml
 msgctxt "@title"
 msgid "Font Appearance"
 msgstr "Apariencia de Fuentes"
 
-#: ../contents/ui/config/config.qml
+#: ../contents/config/config.qml
+msgctxt "@title"
+msgid "Units"
+msgstr "Unidades"
+
+#: ../contents/ui/config/ConfigAppearance.qml
 msgid "Font Family:"
 msgstr "Familia de Fuente"
 
-#: ../contents/ui/config/config.qml
+#: ../contents/ui/config/ConfigAppearance.qml
 msgid "Forecast:"
 msgstr "Predicción:"
 
-#: ../contents/ui/config/config.qml
+#: ../contents/ui/config/ConfigAppearance.qml
 msgid "Temp:"
 msgstr "Temperatura:"
 
-#: ../contents/ui/config/config.qml
+
+#: ../contents/ui/config/ConfigAppearance.qml
+msgid "Date:"
+msgstr "Fecha:"
+
+#: ../contents/ui/config/ConfigAppearance.qml
 msgid "Details:"
 msgstr "Detalles:"
 
-#: ../contents/ui/config/config.qml
+#: ../contents/ui/config/ConfigAppearance.qml
 msgid "Text Color:"
 msgstr "Color de Texto:"
 
-#: ../contents/ui/config/config.qml
+#: ../contents/ui/config/ConfigAppearance.qml
 msgid "Outline:"
 msgstr "Borde de carácter:"
+
+#: ../contents/ui/config/libweather/ConfigUnits.qml
+msgid "Temperature:"
+msgstr "Temperatura:"
+
+#: ../contents/ui/config/libweather/ConfigUnits.qml
+msgid "Pressure:"
+msgstr "Presión:"
+
+#: ../contents/ui/config/libweather/ConfigUnits.qml
+msgid "Wind speed:"
+msgstr "Velocidad del Viento:"
+
+#: ../contents/ui/config/libweather/ConfigUnits.qml
+msgid "Visibility:"
+msgstr "Visibilidad:"
+
+
 
 
