@@ -39,7 +39,7 @@
 			<default>12</default>
 		</entry>
 		<entry name="tempFontSize" type="int">
-			<default>60</default>
+			<default>40</default>
 		</entry>
 		<entry name="dateFontSize" type="int">
 			<default>12</default>
