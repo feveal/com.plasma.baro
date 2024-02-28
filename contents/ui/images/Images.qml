@@ -3,6 +3,8 @@ import QtQuick.Layouts 1.1
 import org.kde.plasma.core 2.0 as PlasmaCore
 import "../libweather"
 
+import org.kde.plasma.components 3.0
+
 Image {
     id: images
 
@@ -21,6 +23,11 @@ Image {
         Item {
             property int ojectWidth: 150 * parentContainer.scaleFactor
             property int ojectHeight: 110 * parentContainer.scaleFactor
+
+//----------------------------------
+
+
+//------------------------------------
 
             Image {
 
@@ -44,13 +51,15 @@ Image {
                     }
 
                     onClicked: {
+                        nextForecastView.state == 'clicked' ? nextForecastView.state = "": nextForecastView.state = 'clicked';
+/*
                         if (nextForecastView.visible) {
                             nextForecastView.visible = false;
                         }
                         else {
                             nextForecastView.visible = true;
                         }
-
+*/
                     }//onClicked
                 }//MouseArea
             }//Image
