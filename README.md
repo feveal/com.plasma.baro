@@ -1,6 +1,6 @@
 # com.plasma.baro
 
-This Plasmoid provides weather forecast on the image of an old barometer. The needle shows the temperature. The image also appears with the current prediction, temperature and other details. It also has an animated anemometer that rotates depending on the wind speed. By clicking on the image of current weather, the information for subsequent days appears and disappears. Likewise, the anemometer can be stopped by clicking on it.
+This Plasmoid provides weather forecast on the image of an old barometer. The needle shows the temperature. The image also appears with the current prediction, temperature and other details. It also has an animated anemometer that rotates depending on the wind speed. By clicking on the image of current weather, the information for subsequent days appears and disappears. Likewise, the anemometer can be stopped by clicking on it. Shows the image of the moon with lighting data and others. By clicking with the mouse on different points in the image, these details are shown or hidden.
 You can change the temperature units between Celsius, Fahrenheit and Kelvin. Also change the font size and color.
 
 ## Screenshots
