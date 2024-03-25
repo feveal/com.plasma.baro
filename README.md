@@ -6,7 +6,7 @@ You can change the temperature units between Celsius, Fahrenheit and Kelvin. Als
 ## Screenshots
 ![](https://github.com/feveal/com.baro/blob/plasma/Screenshot_baro.png)
 -
-![](https://github.com/feveal/com.baro/blob/plasma/Pllasmoid_baro.mp4)
+![](https://github.com/feveal/com.baro/blob/plasma/Plasmoid_baro.mp4)
 -
 ## Getting started:
 The Plasmoid is installed just like the rest. ".local/share/plasma/plasmoids/com.baro-plasma/"
