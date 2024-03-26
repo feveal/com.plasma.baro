@@ -1,0 +1,157 @@
+# Translation of simpleweather in es
+# Copyright (C) 2019
+# This file is distributed under the same license as the simpleweather package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: com.baro-plasma\n"
+"Report-Msgid-Bugs-To: feveal@hotmail.com"
+"POT-Creation-Date: 2024-01-21 13:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 19.04.3\n"
+
+#: ../metadata.desktop
+msgid "Weather Baro"
+msgstr ""
+
+#: ../contents/ui/libweather/WeaterData.qml
+msgid "Wind:"
+msgstr "Viento:"
+
+#: ../contents/ui/libweather/WeaterData.qml
+msgid "Windchill:"
+msgstr "Escalofrios:"
+
+#: ../contents/ui/libweather/WeaterData.qml
+msgid "Short for tonight"
+msgstr "Corto para esta noche"
+
+#: ../contents/ui/libweather/WeaterData.qml
+msgid "nite"
+msgstr "noche"
+
+#: ../contents/ui/libweather/WeaterData.qml
+msgid "certain weather condition"
+msgstr "condiciones climaticas"
+
+#: ../contents/ui/config/ConfigGeneral.qml
+msgid "Update every:"
+msgstr "Actualizar cada:"
+
+#: ../contents/ui/config/ConfigGeneral.qml
+msgid "Show weather details"
+msgstr "Ver detalles"
+
+#: ../contents/ui/config/ConfigGeneral.qml
+msgid "Show weather warnings"
+msgstr "Ver Alertas Meteorológicas:"
+
+#: ../contents/ui/config/ConfigGeneral.qml
+msgid "Desktop Widget: Show background"
+msgstr "Mostrar fondo de Widget"
+
+#: ../contents/ui/config/ConfigGeneral.qml
+msgid "Note: 'wetter.com' server does not provide the current temperature, for this use other servers such as BBC"
+msgstr "Nota: El servidor 'wetter.com' no proporciona la temperatura actual. Utilice otro servidor como BBC"
+
+#: ../contents/config/config.qml
+msgctxt "@title"
+msgid "Font Appearance"
+msgstr "Apariencia de Fuentes"
+
+#: ../contents/config/config.qml
+msgctxt "@title"
+msgid "Units"
+msgstr "Unidades"
+
+#: ../contents/ui/config/ConfigAppearance.qml
+msgid "Font Family:"
+msgstr "Familia de Fuente"
+
+#: ../contents/ui/config/ConfigAppearance.qml
+msgid "Forecast:"
+msgstr "Predicción:"
+
+#: ../contents/ui/config/ConfigAppearance.qml
+msgid "Temp:"
+msgstr "Temperatura:"
+
+
+#: ../contents/ui/config/ConfigAppearance.qml
+msgid "Date:"
+msgstr "Fecha:"
+
+#: ../contents/ui/config/ConfigAppearance.qml
+msgid "Details:"
+msgstr "Detalles:"
+
+#: ../contents/ui/config/ConfigAppearance.qml
+msgid "Text Color:"
+msgstr "Color de Texto:"
+
+#: ../contents/ui/config/ConfigAppearance.qml
+msgid "Outline:"
+msgstr "Borde de carácter:"
+
+#: ../contents/ui/config/libweather/ConfigUnits.qml
+msgid "Temperature:"
+msgstr "Temperatura:"
+
+#: ../contents/ui/config/libweather/ConfigUnits.qml
+msgid "Pressure:"
+msgstr "Presión:"
+
+#: ../contents/ui/config/libweather/ConfigUnits.qml
+msgid "Wind speed:"
+msgstr "Velocidad del Viento:"
+
+#: ../contents/ui/config/libweather/ConfigUnits.qml
+msgid "Visibility:"
+msgstr "Visibilidad:"
+
+#: ../contents/ui/moon/Moon.qml
+msgid " Lightning: "
+msgstr " Iliminacion: "
+
+#: ../contents/ui/moon/Moon.qml
+msgid " days for "
+msgstr " dias para "
+
+#: ../contents/ui/moon/Moon.qml
+msgid "Full Moon"
+msgstr "Luna llena"
+
+#: ../contents/ui/moon/Moon.qml
+msgid "New Moon"
+msgstr "Luna nueva"
+
+#: ../contents/ui/moon/Moon.qml
+msgid "First Quarter"
+msgstr "Cuarto menguante"
+
+#: ../contents/ui/moon/Moon.qml
+msgid "Last Quarter"
+msgstr "Cuarto creciente"
+
+#: ../contents/ui/moon/Moon.qml
+msgid "Waning Crescent"
+msgstr "Creciente"
+
+#: ../contents/ui/moon/Moon.qml
+msgid "Waning Gibbous"
+msgstr "Menguante"
+
+#: ../contents/ui/moon/Moon.qml
+msgid "Waxing Crescent"
+msgstr "Media Luna creciente"
+
+#: ../contents/ui/moon/Moon.qml
+msgid "Waxing Gibbous"
+msgstr "Media Luna menguante"
