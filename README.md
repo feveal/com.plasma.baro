@@ -4,12 +4,12 @@ This Plasmoid provides weather forecast on the image of an old barometer. The ne
 You can change the temperature units between Celsius, Fahrenheit and Kelvin. Also change the font size and color.
 
 ## Screenshots
-![](https://github.com/feveal/com.baro/blob/plasma/Screenshot_baro.png)
+![](https://github.com/feveal/kde.feveal.weather/blob/plasma/Screenshot_baro.png)
 -
-![](https://github.com/feveal/com.baro/blob/plasma/plasma_baro.mp4)
+![](https://github.com/feveal/kde.feveal.weather/blob/plasma/plasma_baro.mp4)
 -
 ## Getting started:
-Download de ZIP file. Unzip. Rename folder "kde.feveal.weater-plasma" for "kde.feveal.weater"
+Download de ZIP file. Unzip. Rename folder "kde.feveal.weather-plasma" for "kde.feveal.weather"
 Copy the Plasmoid into just like the rest. ".local/share/plasma/plasmoids/"  
 Integrate with your widgets. 
 
