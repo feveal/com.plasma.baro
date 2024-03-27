@@ -1,0 +1,28 @@
+{
+	"KPlugin": {
+		"Authors": [
+			{
+				"Email": "feveal@hotmail.com",
+				"Name": "Fernando Velez"
+			}
+		],
+		"Category": "Weather",
+		"Description": "Weather Temperature and Moon data in Old Barometer",
+		"Icon": "desktop",
+		"Id": "kde.feveal.weather",
+		"Name": "Weather Baro",
+		"Type": "Service",
+		"ServiceTypes": ["Plasma/Applet"],
+		"X-KDE-PluginInfo-License": "GPLv3",
+		"Version": "1.1",
+		"Website": "https://github.com/feveal/com.baro"
+	},
+	"X-Plasma-API": "declarativeappletscript",
+	"X-Plasma-MainScript": "ui/Main.qml",
+	"X-Plasma-DefaultSize": "478,478",
+	"X-Plasma-StandAloneApp": true,
+
+	"X-Plasma-Requires-FileDialog": "Unused",
+	"X-Plasma-Requires-LaunchApp": "Unused"
+
+}
