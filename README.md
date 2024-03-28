@@ -6,13 +6,14 @@ You can change the temperature units between Celsius, Fahrenheit and Kelvin. Als
 ## Screenshots
 ![](https://github.com/feveal/kde.feveal.weather/blob/plasma/Screenshot_baro.png)
 -
-![](https://github.com/feveal/kde.feveal.weather/blob/plasma/plasma_baro.mp4)
+![See Video](https://github.com/feveal/kde.feveal.weather/blob/plasma/plasma_baro.mp4)
 -
 ## Getting started:
 Download de ZIP file. Unzip. Rename folder "kde.feveal.weather-plasma" for "kde.feveal.weather"
 Copy the Plasmoid into just like the rest. ".local/share/plasma/plasmoids/"  
 Integrate with your widgets. 
 
+Sometimes when resizing the plasmoid, the characters with the moon data do not appear correctly. Use the "restartplasma" file from the terminal by running "./restartplasma"
 
 ## Description:
 Plasmoid for KDE Desktop
