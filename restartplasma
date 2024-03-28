@@ -1,0 +1,9 @@
+#!/bin/sh
+# Version: 6
+
+# This script restart plasma and the plasmoids
+	echo "[build] Restarting plasmashell"
+	killall plasmashell
+	kstart5 plasmashell
+	echo "[build] Done restarting plasmashell"
+exit
