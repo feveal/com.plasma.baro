@@ -8,6 +8,9 @@
 		],
 		"Category": "Weather",
 		"Description": "Weather Temperature and Moon data in Old Barometer",
+		"Description[es]": "Tiempo, temperatura y datos lunares en un Barómetro antiguo",
+		"Description[fr]": "Données météorologiques sur la température et la lune dans l'ancien baromètre",
+		"Description[de]": "Wettertemperatur-und Monddaten im alten Barometer",
 		"Icon": "desktop",
 		"Id": "kde.feveal.weather",
 		"Name": "Weather Baro",
@@ -15,7 +18,7 @@
 		"ServiceTypes": ["Plasma/Applet"],
 		"X-KDE-PluginInfo-License": "GPLv3",
 		"Version": "1.1",
-		"Website": "https://github.com/feveal/kde.feveal.weather"
+		"Website": "https://github.com/feveal/com.baro"
 	},
 	"X-Plasma-API": "declarativeappletscript",
 	"X-Plasma-MainScript": "ui/Main.qml",
