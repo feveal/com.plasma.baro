@@ -1,7 +1,7 @@
 # Translation of simpleweather in es
 # Copyright (C) 2019
 # This file is distributed under the same license as the simpleweather package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024 YEAR.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: com.baro-plasma\n"
@@ -20,10 +20,6 @@ msgstr ""
 #: ../metadata.desktop
 msgid "Weather Baro"
 msgstr ""
-
-#: ../contents/ui/Main.qml
-msgid "Refresh"
-msgstr "Refrescar"
 
 #: ../contents/ui/libweather/WeaterData.qml
 msgid "Wind:"
@@ -146,11 +142,11 @@ msgstr "Cuarto creciente"
 
 #: ../contents/ui/moon/Moon.qml
 msgid "Waning Crescent"
-msgstr "Menguante"
+msgstr "Creciente"
 
 #: ../contents/ui/moon/Moon.qml
 msgid "Waning Gibbous"
-msgstr "Creciente"
+msgstr "Menguante"
 
 #: ../contents/ui/moon/Moon.qml
 msgid "Waxing Crescent"
