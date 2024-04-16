@@ -4,19 +4,26 @@ This Plasmoid provides weather forecast on the image of an old barometer. The ne
 You can change the temperature units between Celsius, Fahrenheit and Kelvin. Also change the font size and color.
 
 ## Screenshots
-![](https://github.com/feveal/kde.feveal.weather/blob/plasma/Screenshot_baro.png)
+![](https://www.opencode.net/feveal/kde-feveal-weather/-/raw/main/Screenshot_baro.png)
 -
-![See Video](https://github.com/feveal/kde.feveal.weather/blob/plasma/plasma_baro.mp4)
+![](https://www.opencode.net/feveal/kde-feveal-weather/-/raw/main/plasma_baro.mp4)
 -
+
 ## Getting started:
-Download de ZIP file. Unzip. Rename folder "kde.feveal.weather-plasma" for "kde.feveal.weather"
-Copy the Plasmoid into just like the rest. ".local/share/plasma/plasmoids/"  
-Integrate with your widgets. 
+Unzip the file. Look in the unzipped folder the file "install_plasmoid.sh". Open the terminal in the folder where the file is located.
+
+Run in terminal "./install_plasmoid.sh"
+The Plasmoid is installed just like the rest. ".local/share/plasma/plasmoids/kde.feveal.weather/"
 
 Sometimes when resizing the plasmoid, the characters with the moon data do not appear correctly. Use the "restartplasma" file from the terminal by running "./restartplasma"
 
+> **[!Attention:]**
+> Check that the **"moon.zip"** file has been correctly unzipped to the destination path. They are images of phases of the moon. They have been put in a zip because the "opencode,net" server does not support files named with blank spaces.
+
+The Plasmoid is integrated  with the rest.
+
 ## Description:
-Plasmoid for KDE Desktop
+Plasmoid for KDE Desktop (Version 1.2) This version fixes some minor bugs that appear on console. Also added a refresher for lunar data.
 
 ## Authors and acknowledgment:
 Fernando Velez (feveal@hotmail.com), but using routines from other authors ( xyz.relativity@gmail.com , zrenfire@gmail.com ) 
