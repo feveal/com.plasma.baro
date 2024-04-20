@@ -18,14 +18,14 @@ QtObject {
 	}
 	readonly property int locale_windSpeedUnitId: {
 		if (localeUsesMetric) {
-			return 9000 // MeterPerSecond
+			return 9001 // Km/h
 		} else {
 			return 9002 // MilePerHour
 		}
 	}
 	readonly property int locale_pressureUnitId: {
 		if (localeUsesMetric) {
-			return 5008 // Hectopascal
+			return 5022 // Millibar
 		} else {
 			return 5028 // InchesOfMercury
 		}
