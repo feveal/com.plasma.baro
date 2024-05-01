@@ -4,6 +4,7 @@
 # This script restart plasma and the plasmoids
 	echo "[build] Restarting plasmashell"
 	killall plasmashell
+	sleep 5
 	kstart5 plasmashell
 	echo "[build] Done restarting plasmashell"
 exit
