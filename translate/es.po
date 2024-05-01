@@ -54,10 +54,6 @@ msgid "Show weather warnings"
 msgstr "Ver Alertas Meteorológicas:"
 
 #: ../contents/ui/config/ConfigGeneral.qml
-msgid "Desktop Widget: Show background"
-msgstr "Mostrar fondo de Widget"
-
-#: ../contents/ui/config/ConfigGeneral.qml
 msgid "Note: 'wetter.com' server does not provide the current temperature, for this use other servers such as BBC"
 msgstr "Nota: El servidor 'wetter.com' no proporciona la temperatura actual. Utilice otro servidor como BBC"
 
@@ -134,11 +130,11 @@ msgstr "Luna nueva"
 
 #: ../contents/ui/moon/Moon.qml
 msgid "First Quarter"
-msgstr "Cuarto menguante"
+msgstr "Cuarto creciente"
 
 #: ../contents/ui/moon/Moon.qml
 msgid "Last Quarter"
-msgstr "Cuarto creciente"
+msgstr "Cuarto menguante"
 
 #: ../contents/ui/moon/Moon.qml
 msgid "Waning Crescent"
