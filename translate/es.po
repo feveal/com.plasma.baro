@@ -130,11 +130,11 @@ msgstr "Luna nueva"
 
 #: ../contents/ui/moon/Moon.qml
 msgid "First Quarter"
-msgstr "Cuarto creciente"
+msgstr "Cuarto menguante"
 
 #: ../contents/ui/moon/Moon.qml
 msgid "Last Quarter"
-msgstr "Cuarto menguante"
+msgstr "Cuarto creciente"
 
 #: ../contents/ui/moon/Moon.qml
 msgid "Waning Crescent"
