@@ -1,4 +1,4 @@
-# Translation of simpleweather in es
+iente# Translation of simpleweather in es
 # Copyright (C) 2019
 # This file is distributed under the same license as the simpleweather package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
@@ -130,11 +130,11 @@ msgstr "Luna nueva"
 
 #: ../contents/ui/moon/Moon.qml
 msgid "First Quarter"
-msgstr "Cuarto menguante"
+msgstr "Cuarto creciente"
 
 #: ../contents/ui/moon/Moon.qml
 msgid "Last Quarter"
-msgstr "Cuarto creciente"
+msgstr "Cuarto menguante"
 
 #: ../contents/ui/moon/Moon.qml
 msgid "Waning Crescent"
