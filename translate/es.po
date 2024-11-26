@@ -138,16 +138,16 @@ msgstr "Cuarto menguante"
 
 #: ../contents/ui/moon/Moon.qml
 msgid "Waning Crescent"
-msgstr "Creciente"
-
-#: ../contents/ui/moon/Moon.qml
-msgid "Waning Gibbous"
 msgstr "Menguante"
 
 #: ../contents/ui/moon/Moon.qml
+msgid "Waning Gibbous"
+msgstr "Creciente"
+
+#: ../contents/ui/moon/Moon.qml
 msgid "Waxing Crescent"
-msgstr "Media Luna menguante"
+msgstr "Media Luna creciente
 
 #: ../contents/ui/moon/Moon.qml
 msgid "Waxing Gibbous"
-msgstr "Media Luna creciente"
+msgstr "Media Luna menguante"
