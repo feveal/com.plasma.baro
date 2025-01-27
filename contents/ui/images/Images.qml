@@ -24,11 +24,6 @@ Image {
             property int ojectWidth: 150 * parentContainer.scaleFactor
             property int ojectHeight: 110 * parentContainer.scaleFactor
 
-//----------------------------------
-
-
-//------------------------------------
-
             Image {
 
                 x:100 * parentContainer.scaleFactor
@@ -37,7 +32,20 @@ Image {
                 width: parent.ojectWidth
                 height: parent.ojectHeight
 
-                source: "../images/" + weatherData.currentConditionIconName + ".png"
+                // Filtrar el nombre del icono antes de añadir la extensión ".png"
+                source: "../images/" + sanitizeIconName(weatherData.currentConditionIconName) + ".png"
+
+                // Función para quitar "-day" o "-night" del nombre del icono
+                function sanitizeIconName(iconName) {
+                    if (iconName.endsWith("-day")) {
+                        const sanitized = iconName.slice(0, -4); // Quitar "-day"
+                        return sanitized;
+                    } else if (iconName.endsWith("-night")) {
+                        const sanitized = iconName.slice(0, -6); // Quitar "-night"
+                        return sanitized;
+                    }
+                    return iconName; // Si no termina en "-day" o "-night", devolver tal cual
+                }
 
                 MouseArea {
                     id: mouseDetails
