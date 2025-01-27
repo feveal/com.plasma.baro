@@ -1,7 +1,9 @@
-# kde.feveal.weather
+# kde.feveal.weather (1.3)
 
 This Plasmoid provides weather forecast on the image of an old barometer. The needle shows the temperature. The image also appears with the current prediction, temperature and other details. It also has an animated anemometer that rotates depending on the wind speed. By clicking on the image of current weather, the information for subsequent days appears and disappears. Likewise, the anemometer can be stopped by clicking on it. Shows the image of the moon with lighting data and others. By clicking with the mouse on different points in the image, these details are shown or hidden.
 You can change the temperature units between Celsius, Fahrenheit and Kelvin. Also change the font size and color.
+
+**NOTE:** Please note that all servers do not provide certain data, for example "wetter.com" does not provide current temperature or wind speed, therefore you will not see the current temperature data, the needle will not be visible, and the anemometer will not spin. If they are available for your location, use other servers such as BBC or NOAA.
 
 ## Screenshots
 ![](https://www.opencode.net/feveal/kde-feveal-weather/-/raw/main/Screenshot_baro.png)
@@ -23,7 +25,11 @@ Sometimes when resizing the plasmoid, the characters with the moon data do not a
 The Plasmoid is integrated  with the rest.
 
 ## Description:
-Plasmoid for KDE Desktop (Version 1.2) This version fixes some minor bugs that appear on console. Also added a refresher for lunar data.
+Plasmoid for KDE Desktop
+
+(Version 1.3) This version adds new icons that were missing for some weather servers. Also some servers add text strings to image names which caused the image not to be found, this problem has been fixed.
+
+(Version 1.2) This version fixes some minor bugs that appear on console. Also added a refresher for lunar data.
 
 ## Authors and acknowledgment:
 Fernando Velez (feveal@hotmail.com), but using routines from other authors ( xyz.relativity@gmail.com , zrenfire@gmail.com ) 
