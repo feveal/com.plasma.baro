@@ -6,7 +6,7 @@
 import QtQuick 2.0
 import QtQuick.Layouts 1.1
 import org.kde.plasma.core 2.0 as PlasmaCore
-
+import QtQuick.XmlListModel 2.0
 import org.kde.plasma.private.weather 1.0 as WeatherPlugin
 
 QtObject {
@@ -45,7 +45,7 @@ QtObject {
 	function connectWeatherSource() {
 		weatherDataSource.connectSource(weatherSource)
 	}
-	// onOberservationTimestampChanged: console.log(plasmoid.pluginName, 'oberservationTimestamp', oberservationTimestamp)
+	onOberservationTimestampChanged: console.log(plasmoid.pluginName, 'oberservationTimestamp', oberservationTimestamp)
 
 	property var weatherDataSource: PlasmaCore.DataSource {
 		id: weatherDataSource
@@ -70,7 +70,7 @@ QtObject {
 				connectingToSource = false
 				plasmoid.busy = false
 //---->> Visualizar en consola todos los datos proporcionados por el sevidor
-//				 logCurrentData()
+				 logCurrentData()
 			}
 		}
 
@@ -404,5 +404,7 @@ function weatherTomorrow() {
 		// console.log('model', JSON.stringify(model, null, '\t'))
 		return model
 	}
+
+
 }
 
